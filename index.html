@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>둘이 개인정보처리방침</title>
+<style>
+  body { font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; color: #2d2a26; line-height: 1.7; }
+  h1 { font-size: 24px; } h2 { font-size: 18px; margin-top: 32px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid #e5e0d8; padding: 8px 10px; text-align: left; }
+  th { background: #f7f3ec; }
+  .muted { color: #8a857d; font-size: 13px; }
+  a { color: #e8734a; }
+</style>
+</head>
+<body>
+<h1>둘이(Dooly) 개인정보처리방침</h1>
+<p><strong>둘이</strong>(이하 "서비스")는 이용자의 개인정보를 소중히 다루며, 개인정보 보호법 등
+관련 법령을 준수합니다. 본 방침은 서비스가 어떤 정보를 왜 수집하고 어떻게 보관·파기하는지 설명합니다.</p>
+
+<h2>1. 수집하는 개인정보와 목적</h2>
+<table>
+  <tr><th>항목</th><th>수집 방법</th><th>목적</th></tr>
+  <tr><td>소셜 계정 식별자(고유 ID)</td><td>소셜 로그인(Google·카카오·Apple)</td><td>회원 식별·로그인</td></tr>
+  <tr><td>닉네임(표시 이름)</td><td>소셜 로그인 제공자</td><td>가계부 멤버 표시</td></tr>
+  <tr><td>이메일 주소</td><td>소셜 로그인 제공자(제공 시)</td><td>회원 식별·문의 대응</td></tr>
+  <tr><td>가계부 기록(거래·예산·카테고리 등)</td><td>이용자가 직접 입력</td><td>서비스 핵심 기능 제공</td></tr>
+</table>
+<p>서비스는 <strong>금융기관 연동·계좌/카드 정보 수집을 하지 않습니다.</strong> 모든 가계부 기록은
+이용자가 직접 입력한 것입니다. 결제 정보는 수집하지 않습니다.</p>
+
+<h2>2. 보관 기간과 파기</h2>
+<ul>
+  <li>개인정보는 <strong>회원 탈퇴 시까지</strong> 보관하며, 탈퇴 시 지체 없이 파기합니다.</li>
+  <li>탈퇴 시 개인 가계부의 모든 기록은 <strong>완전히 삭제</strong>됩니다.</li>
+  <li><strong>공유 가계부에 남긴 기록</strong>(거래 등)은 함께 쓰던 상대 이용자의 자산이기도 하므로,
+      <strong>작성자 정보를 분리(익명화)한 상태로 상대에게 남습니다.</strong> 계정 식별자·닉네임 등
+      나의 개인정보는 삭제되며, 기록과 나를 연결할 수 없게 됩니다.</li>
+  <li>공유 가계부의 모든 멤버가 탈퇴하면 해당 가계부 기록도 완전히 삭제됩니다.</li>
+  <li>법령상 보존 의무가 있는 경우 해당 기간 동안 별도 보관 후 파기합니다.</li>
+</ul>
+
+<h2>3. 제3자 제공 및 처리 위탁</h2>
+<p>서비스는 이용자의 개인정보를 <strong>제3자에게 판매·제공하지 않습니다.</strong>
+서비스 운영을 위해 아래 처리 위탁이 이루어집니다.</p>
+<table>
+  <tr><th>수탁자</th><th>위탁 업무</th><th>비고</th></tr>
+  <tr><td>Supabase Inc.</td><td>데이터 보관·인증 처리(클라우드 인프라)</td><td>데이터는 암호화 연결(TLS)로 전송</td></tr>
+  <tr><td>Google·카카오·Apple 등 소셜 로그인 제공자</td><td>로그인 인증</td><td>각 사 개인정보처리방침 적용</td></tr>
+  <tr><td>Functional Software, Inc. (Sentry)</td><td>앱 오류 수집·분석(안정성 개선)</td><td>오류 발생 시 기기·오류 정보만 전송(미국 저장), 가계부 기록은 전송되지 않음</td></tr>
+</table>
+
+<h2>4. 이용자의 권리</h2>
+<ul>
+  <li>이용자는 언제든지 앱 내에서 자신의 기록을 열람·수정·삭제할 수 있습니다.</li>
+  <li><strong>계정 삭제(탈퇴)는 앱 내 [관리 → 계정 삭제]에서 직접</strong> 할 수 있으며, 별도 문의 없이 즉시 처리됩니다.</li>
+  <li>개인정보 관련 문의는 앱 내 [도움말 → 문의하기] 또는 아래 연락처로 요청 시 지체 없이 조치합니다.</li>
+</ul>
+
+<h2>5. 안전성 확보 조치</h2>
+<ul>
+  <li>모든 통신은 TLS로 암호화됩니다.</li>
+  <li>데이터 접근은 계정 단위 권한 정책(Row Level Security)으로 통제되어, 가계부 멤버가 아닌
+      사용자는 해당 가계부 데이터에 접근할 수 없습니다.</li>
+  <li>운영자는 서비스 운영·장애 대응 목적 외에 이용자 데이터를 열람하지 않습니다.</li>
+</ul>
+
+<h2>6. 운영자 및 연락처</h2>
+<ul>
+  <li>운영자: 둘이 운영자</li>
+  <li>문의: <a href="mailto:kimseok1116@gmail.com">kimseok1116@gmail.com</a></li>
+</ul>
+
+<h2>7. 고지</h2>
+<p>본 방침이 변경되는 경우 앱 내 공지 또는 본 페이지를 통해 사전 고지합니다.</p>
+<p class="muted">시행일: 서비스 출시일 · <a href="terms.html">이용약관 보기</a></p>
+</body>
+</html>
